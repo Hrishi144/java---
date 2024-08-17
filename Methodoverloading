@@ -1,0 +1,22 @@
+package javacc;
+
+ class Method {
+	void area(double r) {
+		 r=4;
+		System.out.println("the area of circle is"+(3.14*r*r));
+		
+	}void area(int a,int b){
+		System.out.println("area of rectangle is"+(a*b));
+	} void area(double x,double y) {
+		System.out.println("area of triangle is"+(1.5*x*y));
+	
+	}
+
+} public class Methodoverloading{
+	public static void main(String[] args) {
+		Method p=new Method();
+		p.area(2.3);
+		p.area(2,4);
+		p.area(3.4,4.7);
+	}
+}
