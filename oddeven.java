@@ -1,18 +1,14 @@
 class oddeven{
-    int numbr=3;
+    int numbr=10;
     void num(){
+        if(numbr%2==0){
         System.out.println("the given number"+numbr+" is even");
-        }
-        void num2(){
+        }else{
          System.out.println("the given number"+numbr+" is odd");   
-        }
+        }}
  }
-  public class mainclass{
-    public static void main(String[] args){
+  public class check{
+    public static void main(String args[]){
         oddeven n= new oddeven();
-        if(n.numbr%2==0){
-        n.num();
-        }
-        else {
-        n.num2();
-    }  }}
+         n.num();
+          }}
