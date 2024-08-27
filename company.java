@@ -54,19 +54,21 @@ class manager extends Employee{
             e.salary("officer");
             e.specialization();
             e.department();
+            System.out.println("THE DETAILS ARE OF THE FOLLOWING***********\n");
 System.out.println("Name: "+e.name);
 System.out.println("age: "+e.age);
 System.out.println("phonenumebr "+e.phnnum);
 System.out.println("address: "+e.address);
 System.out.println("salary: "+e.salary);
 System.out.println("specialization: "+e.spcliztion1);
-System.out.println("Department1: "+e.department1);
+System.out.println("Department1: "+e.department1+"\n");
             manager x=new manager();
             x.printemployee("manager");
             x.salary("manager");
             x.specialization();
             x.department();
-            System.out.println("Name: "+x.name);
+            System.out.println("THE DETAILS ARE OF THE FOLLOWING***********\n");
+ System.out.println("Name: "+x.name);
 System.out.println("age: "+x.age);
 System.out.println("phonenumebr "+x.phnnum);
 System.out.println("address:"+x.address);
@@ -76,3 +78,4 @@ System.out.println("Department1:" +x.department2);
 
         }
      }
+   
