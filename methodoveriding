@@ -1,0 +1,41 @@
+import java.util.Scanner;
+ class Employe { 
+	 double salary1,DA,HRA,salary;
+	 Employe(double salary,double DA,double HRA){
+		 this.salary=salary;
+		 this.DA=DA;
+		 this.HRA=HRA;
+	 }
+  void display() {
+	 System.out.println("Employee...");
+  } void calculatesalary() {
+	  salary1=salary+salary*(DA/100)+salary*(HRA/100);
+	  System.out.println("The salary is "+salary1);
+  }
+} class engineer extends Employe{
+	engineer(double salary,double DA, double HRA){
+		super(salary,DA,HRA);
+	} void display() {
+		super.display();
+		super.calculatesalary();
+		System.out.println("engineer:");
+	} void calculatesalary() {
+		System.out.println("the salary of the engineer is "+2*salary1);
+	}
+} public class Methodoveriding{
+	public static void main(String args[]) {
+	 double salary,DA,HRA;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the salary of the employee");
+		salary=sc.nextDouble();
+		System.out.println("enter the HRA% of the employee");
+		HRA=sc.nextDouble();
+		System.out.println("enter theDA% of the employee");
+		DA=sc.nextDouble();
+		engineer e=new engineer(salary,DA,HRA);
+		e.display();
+		e.calculatesalary();
+		sc.close();
+		
+	}
+}
