@@ -74,7 +74,7 @@ class manager extends Employee{
             System.out.println("address: "+e.address);
             System.out.println("salary: "+e.salary);
             System.out.println("specialization: "+e.spcliztion1);
-            System.out.println("Department1: "+e.department1+"\n");
+            System.out.println("Department: "+e.department1+"\n");
             System.out.println("The details of the manager**************");
  System.out.println("Name: "+x.name);
 System.out.println("age: "+x.age);
@@ -82,6 +82,6 @@ System.out.println("phonenumebr "+x.phnnum);
 System.out.println("address:"+x.address);
 System.out.println("salary:"+x.salary);
 System.out.println("specialization: "+x.spcliztion2);
-System.out.println("Department1:" +x.department2);
+System.out.println("Department:" +x.department2);
         }
      }
