@@ -1,0 +1,36 @@
+import java.util.Scanner;
+interface human{
+	final int jobid=1050;
+	void learn(String str);
+	void work();
+} interface recruitement{
+	void screening(int score);
+} class programmer implements human,recruitement{
+	public void learn(String str) {
+		System.out.println("the trained area is "+str);
+	} public void screening(int score) {
+		System.out.println("the score is "+score);
+		
+	} public void work() {
+		System.out.println("the role is senior develepor");
+	}
+}
+ public class Interface{
+	 public static void main(String args []) {
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("Enter your trained area");
+		 String str=sc.nextLine();
+		 System.out.println("enter the score");
+		 int score=sc.nextInt();
+		 programmer m=new programmer();
+		 System.out.println("ABOUT MY PLACEMENT:");
+		 m.learn(str);
+		 m.screening(score);
+		 m.work();
+		 System.out.println("the job id of the employee is "+m.jobid);
+		 sc.close();
+		 
+	 }
+ }
+
+
