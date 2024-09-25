@@ -18,6 +18,6 @@ public class palindrome {
         } else {
             System.out.println("Not palindrome");
         }
-        sc.close(); // Close the scanner
+        sc.close(); 
     }
 }
